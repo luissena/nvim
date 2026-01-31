@@ -7,4 +7,5 @@ return {
   require "plugins.flutter-tools",
   require "plugins.mason",
   require "plugins.treesitter",
+  require "plugins.render-markdown",
 }
