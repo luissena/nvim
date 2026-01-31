@@ -10,4 +10,5 @@ return {
   require "plugins.render-markdown",
   require "plugins.flash",
   require "plugins.telescope",
+  require "plugins.nvimtree",
 }
