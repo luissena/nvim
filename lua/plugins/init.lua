@@ -8,4 +8,5 @@ return {
   require "plugins.mason",
   require "plugins.treesitter",
   require "plugins.render-markdown",
+  require "plugins.flash",
 }
