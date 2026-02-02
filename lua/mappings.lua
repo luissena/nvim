@@ -9,6 +9,7 @@ map("i", "jk", "<ESC>")
 
 -- LSP
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP Code Action" })
+map("n", "gi", vim.lsp.buf.implementation, { desc = "LSP Go to Implementation" })
 
 -- Terminal toggles (personalizados)
 map({ "n", "t" }, "<leader>h", function()
