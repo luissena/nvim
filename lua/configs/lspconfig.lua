@@ -17,7 +17,25 @@ vim.lsp.config("yamlls", {
     yaml = {
       schemaStore = { enable = true },
       schemas = {
+        -- GitHub
         ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+        -- Azure DevOps
+        ["https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json"] = {
+          "azure-pipelines.yml",
+          "azure-pipelines.yaml",
+          "/.azure-pipelines/**/*.yml",
+          "/.azure-pipelines/**/*.yaml",
+        },
+        -- Grafana Stack
+        ["https://json.schemastore.org/loki.json"] = { "loki.yml", "loki.yaml", "**/loki/*.yml", "**/loki/*.yaml" },
+        ["https://json.schemastore.org/prometheus.rules.json"] = {
+          "prometheus.rules.yml",
+          "prometheus.rules.yaml",
+          "**/rules/*.yml",
+          "**/rules/*.yaml",
+          "alerts.yml",
+          "alerts.yaml",
+        },
       },
     },
   },
